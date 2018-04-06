@@ -13,13 +13,14 @@ namespace ThreadHelloWorld
         public void Basic()
         {
             Thread t = new Thread(Go);
-            t.Start();
+            t.Start("Hello World");
         }
-        private void Go()
+        private void Go(object Text)
         {
+            string t1 = (string)Text;
             for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("Hej Verden");
+                Console.WriteLine(Text);
             }
         }        
     }
