@@ -14,9 +14,8 @@ namespace ThreadHelloWorld
         {
             Thread t = new Thread(Go);
             t.Start();
-            Go();
         }
-        public void Go()
+        private void Go()
         {
             Console.WriteLine("Hello World");
             Console.WriteLine("Hello World");
