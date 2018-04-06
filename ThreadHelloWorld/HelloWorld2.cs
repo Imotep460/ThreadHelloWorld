@@ -11,12 +11,16 @@ namespace ThreadHelloWorld
     {
         public void Go2()
         {
-            Thread t = new Thread(() => Console.WriteLine("Hello World"));
-            Thread s = new Thread(() => Console.WriteLine("Hello World"));
-            Thread a = new Thread(() => Console.WriteLine("Hello World"));
-            t.Start();
-            s.Start();
-            a.Start();
+            Thread d = new Thread(() =>
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    Console.WriteLine("Hello World");
+                }
+            }
+            );
+            
+            d.Start();
         }
     }
 }

@@ -14,6 +14,7 @@ namespace ThreadHelloWorld
             Console.WriteLine("2. Hello World 2");
             Console.WriteLine("3. Hello World 3");
             Console.WriteLine("4. Exit");
+            Console.WriteLine("");
 
             return Console.ReadLine();
         }

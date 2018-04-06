@@ -25,7 +25,7 @@ namespace ThreadHelloWorld
                 {
                     case "1": StartHelloWrold1(); break;
                     case "2": StartHelloWorld2(); break;
-                    //case "3": HelloWorld3(); break;
+                    //case "3": StartHelloWorld3(); break;
                     case "4": running = false; break;
                 }
             }
@@ -41,5 +41,10 @@ namespace ThreadHelloWorld
             HelloWorld2 helloWorld2 = new HelloWorld2();
             helloWorld2.Go2();
         }
+        //private void StarHelloWorld3()
+        //{
+        //    HelloWorld3 helloWorld3 = new HelloWorld3();
+        //    helloWorld3.Go3();
+        //}
     }
 }
